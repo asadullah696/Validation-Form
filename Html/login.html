@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Css/nav.css">
+    <link rel="stylesheet" href="../Css/body.css">
     
 </head>
 <body>
@@ -27,6 +28,11 @@
         <form class="form">
             <label class="signup" for="Sign up">Sign Up</label>
             <label class="login" for="Login">Login</label>
+            <label for="Email" class="email">Email</label>
+            <input type="email" id="email" class="email">
+            <label for="password" class="password">Password</label>
+            <input type="password" id="password" class="password">
+            <label for="button" class="button" onclick="checkValidation()" ><a class="login" href="./main.html">Login</a></label>
         </form>
     </div>
 
@@ -34,6 +40,6 @@
 
 
 
-    <script src="./app.js"></script>
+    <script src="../Javascript/app.js"></script>
 </body>
 </html>

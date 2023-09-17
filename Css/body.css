@@ -1,0 +1,141 @@
+div.container{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 100%;
+    width: 80%;
+    background-color: aqua;
+}
+form.form{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 60%;
+    width: 35%;
+    background-color: gray;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px black;
+}
+label.signup{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 0%;
+    width: 49.5%;
+    height: 10%;
+    background-color: rgb(185, 185, 185);
+    border: 1px solid black;
+    border-left: none;
+    
+}
+label.login{
+    display: flex;
+    background-color: rgb(185, 185, 185);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-right: none;
+    top: 30%;
+    right: 0%;
+    width: 49.5%;
+    height: 10%;
+}
+label.email{
+    display: flex;
+    position: absolute;
+    top: 41%;
+    height: 9%;
+    color: white;
+    text-shadow: -2px 5px 5px black;
+    font-size: 1.5vw;
+    width: 88%;
+    /* padding-left: 5%; */
+    left: 6%;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: rgb(163, 22, 22); */
+}
+input.email{
+    display: flex;
+    position: absolute;
+    top: 51%;
+    height: 9%;
+    font-size: 1vw;
+    width: 90%;
+    /* padding-left: 5%; */
+    left: 5%;
+    /* justify-content: center; */
+    border: 1px sloid black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px rgb(0, 0, 0);
+    align-items: center;
+    background-color: rgb(105, 105, 105);
+}
+label.password{
+    display: flex;
+    position: absolute;
+    color: white;
+    text-shadow: -2px 5px 5px black;
+    top: 61%;
+    height: 9%;
+    font-size: 1.5vw;
+    width: 88%;
+    /* padding-left: 5%; */
+    left: 6%;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: rgb(163, 22, 22); */
+}
+input.password{
+    display: flex;
+    position: absolute;
+    top: 71%;
+    box-shadow: 1px 3px 3px rgb(0, 0, 0);
+    height: 9%;
+    font-size: 1vw;
+    width: 90%;
+    /* padding-left: 5%; */
+    left: 5%;
+    /* justify-content: center; */
+    border: 1px sloid black;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(105, 105, 105);
+}
+label.button{
+    display: flex;
+    position: absolute;
+    top: 83%;
+    left: 30%;
+    border-radius: 15px;
+    height: 12%;
+    width: 40%;
+    box-shadow: 1px 3px 3px black;
+    background-color: blue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+label.button:hover{
+    background-color: brown;
+    box-shadow: 1px 3px 3px white;
+    color: white;
+}
+a.login{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-shadow: 2px 2px 3px black;
+}
