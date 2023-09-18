@@ -25,14 +25,18 @@
         </div>
     </nav> 
     <div class="container">
-        <form class="form">
-            <label class="signup" for="Sign up">Sign Up</label>
-            <label class="login" for="Login">Login</label>
-            <label for="Email" class="email">Email</label>
-            <input type="email" id="email" class="email">
-            <label for="password" class="password">Password</label>
-            <input type="password" id="password" class="password">
-            <label for="button" class="button" onclick="checkValidation()" ><a class="login" href="./main.html">Login</a></label>
+        <form class="formlogin" id="loginform">
+            <label class="signup1" onclick="newAccount()" for="Sign up">Sign Up</label>
+            <label class="login1" for="Login">Login</label>
+            <label for="new" onclick="newAccount()" class="newaccount1">Create New Account</label>
+            <label for="Email" class="email1">Email</label>
+            <input type="email" id="email" class="email1">
+            <label for="password" class="password1">Password</label>
+            <input type="password" id="password" class="password1">
+            <label for="button" class="button1" onclick="checkValidation()" ><a class="login" href="./main.html">Login</a></label>
+        </form>
+        <form class="formsignup" id="signupform">
+            
         </form>
     </div>
 

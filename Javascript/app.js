@@ -19,9 +19,49 @@
         let useremail = document.getElementById("email").value ;
         let userpassword = document.getElementById("password").value ;
 
-        for(i=0; i<email.length; i++){
-            if(useremail != email[i]){
-                alert("BY")
-            }
+        if(email.includes(useremail)){
+            true
         }
+        else{
+            false
+            alert("Email not match");
+        }
+
+        if(password.includes(userpassword)){
+            true
+        }
+        else{
+            false
+            alert("Password not match");
+        }
+        
     }
+
+    function newAccount(){
+        document.getElementById("loginform").style.display = "none"
+        document.getElementById("signupform").style.display = "flex"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
