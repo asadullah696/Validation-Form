@@ -289,3 +289,86 @@ select.age{
     right: 5%;
     background-color: rgb(255, 255, 0);
 }
+label.gender{
+    display: flex;
+    position: absolute;
+    min-width: 30%;
+    top: 45%;
+    height: 5%;
+    font-size: 2vw;
+    left: 5%;
+    background-color: rgb(255, 255, 0);
+}
+div.radiogender{
+    display: flex;
+    position: absolute;
+    min-width: 55%;
+    top: 45%;
+    height: 5%;
+    font-size: 2vw;
+    right: 5%;
+    background-color: rgb(255, 255, 0);
+}
+input.male{
+    display: flex;
+    position: absolute;
+    width: 6%;
+    top: 15%;
+    height: 50%;
+    /* font-size: 2vw; */
+    left: 0%;
+    background-color: rgb(0, 0, 0);
+}
+label.male{
+    display: flex;
+    position: absolute;
+    width: 23%;
+    top: 5%;
+    align-items: center;
+    height: 90%;
+    font-size: 1vw;
+    left: 9%;
+    /* background-color: rgb(35, 35, 1); */
+}
+input.female{
+    display: flex;
+    position: absolute;
+    width: 6%;
+    top: 15%;
+    height: 50%;
+    font-size: 2vw;
+    left: 33%;
+    /* background-color: rgb(0, 0, 0); */
+}
+label.female{
+    display: flex;
+    position: absolute;
+    width: 23%;
+    top: 5%;
+    align-items: center;
+    height: 90%;
+    font-size: 1vw;
+    left: 41%;
+    /* background-color: rgb(35, 35, 1); */
+}
+input.other{
+    display: flex;
+    position: absolute;
+    width: 6%;
+    top: 15%;
+    height: 50%;
+    font-size: 2vw;
+    left: 63%;
+    /* background-color: rgb(0, 0, 0); */
+}
+label.other{
+    display: flex;
+    position: absolute;
+    width: 23%;
+    top: 5%;
+    align-items: center;
+    height: 90%;
+    font-size: 1vw;
+    left: 73%;
+    /* background-color: rgb(35, 35, 1); */
+}
