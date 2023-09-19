@@ -1,6 +1,6 @@
 
 
-
+        // Navbar Javascript Function
 
     function menuOn(){
         let menulist = document.getElementById("menuList").style.display = "flex";
@@ -12,6 +12,14 @@
         let oN = document.getElementById("menuOn").style.display = "flex";
         let oFf = document.getElementById("menuOff").style.display = "none";
     }
+
+        // User Credential Array
+
+        let email = ["asadullah", "badshah", "Kings"]
+        let password = ["123", "456", "789"]
+
+        // Login Function
+
     function checkValidation(){
         let email = ["asadullah", "badshah", "Kings"]
         let password = ["123", "456", "789"]
@@ -37,7 +45,7 @@
             }
         }
 
-        
+        // Changing Login and Signup card Function        
         
     }
 
@@ -45,6 +53,19 @@
         document.getElementById("loginform").style.display = "none"
         document.getElementById("signupform").style.display = "flex"
     }
+    function login(){
+        document.getElementById("loginform").style.display = "flex"
+        document.getElementById("signupform").style.display = "none"
+    }
+
+    // function signupUser(){
+    //     let usernameSignup = document.getElementById("usernamesignup").value;
+    //     let signupPassword = document.getElementById("passwordsignup").value;
+    //     let userFatherNameSignup = document.getElementById("fathernamesignup").value;
+    //     let emailSignup = document.getElementById("emailsignup").value;
+    //     email.push(usernameSignup);
+    //     password.push(signupPassword);
+    // }
 
 
 

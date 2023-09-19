@@ -8,6 +8,9 @@
     
 </head>
 <body>
+
+        <!-- Navbar -->
+
     <nav class="navbar">
         <header class="logo">
             The Brand
@@ -25,6 +28,9 @@
         </div>
     </nav> 
     <div class="container">
+
+            <!-- Login Form -->
+
         <form class="formlogin" id="loginform">
             <label class="signup1" onclick="newAccount()" for="Sign up">Sign Up</label>
             <label class="login1" for="Login">Login</label>
@@ -37,23 +43,31 @@
             <label id="errorpassword" for="errorpassword">*password not match</label>
             <label for="button" class="button1" onclick="checkValidation()" ><a id="login" class="login" href="#login">Login</a></label>
         </form>
+
+            <!-- Signup Form -->
+
         <form class="formsignup" id="signupform">
-            <label class="signup2" onclick="newAccount()" for="Sign up">Sign Up</label>
-            <label class="login2" for="Login">Login</label>
+            <label class="signup2" for="Sign up">Sign Up</label>
+            <label class="login2" onclick="login()" for="Login">Login</label>
             <label for="username" class="username">Username</label>
-            <input type="username" class="username">
+            <input type="username" id="usernamesignup" class="username">
             <label for="fathername" class="fathername">Father Name</label>
-            <input type="text" class="fathername">
+            <input type="text" id="fathernamesignup" class="fathername">
             <label for="age" class="age">Age</label>
             <select name="Age" id="age" class="age">
                 
             </select>
             <label for="gender" class="gender">Gender</label>
             <div class="radiogender">
-            <input type="radio" class="male" name="male" id="male" value="Male"><label for="male" class="male">Male</label>
-            <input type="radio" class="female" name="female" id="female" value="Male"><label for="female" class="female">Female</label>
-            <input type="radio" class="other" name="other" id="other" value="other"><label for="other" class="other">Other</label>
+            <input type="radio" class="male" name="gender" id="" value="Male"><label for="male" class="male">Male</label>
+            <input type="radio" class="female" name="gender" id="female" value="Male"><label for="female" class="female">Female</label>
+            <input type="radio" class="other" name="gender" id="other" value="other"><label for="other" class="other">Other</label>
             </div>
+            <label for="email" class="emailsignup">Email</label>
+            <input type="email" id="emailsignup" class="emailsignup">
+            <label for="password" class="passwordsignup">Password</label>
+            <input type="password" class="passwordsignup" id="passwordsignup">
+            <label for="button" onclick="signupUser()" class="buttonsignup">Signup</label>
         </form>
     </div>
 

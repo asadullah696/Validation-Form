@@ -8,7 +8,7 @@ div.container{
     background-color: aqua;
 }
 form.formlogin{
-    display: none;
+    display: flex;
     position: absolute;
     top: 10%;
     left: 5%;
@@ -187,7 +187,7 @@ a.login:hover{
     z-index: -1;
 }
 form.formsignup{
-    display: flex;
+    display: none;
     position: absolute;
     top: 10%;
     left: 5%;
@@ -236,7 +236,7 @@ label.username{
     left: 5%;
     height: 5%;
     width: 90%;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 input.username{
     display: flex;
@@ -257,8 +257,9 @@ label.fathername{
     left: 5%;
     height: 5%;
     width: 90%;
-    background-color: aqua;
-}input.fathername{
+    /* background-color: aqua; */
+}
+input.fathername{
     display: flex;
     position: absolute;
     top: 33%;
@@ -277,7 +278,7 @@ label.age{
     height: 5%;
     font-size: 2vw;
     left: 5%;
-    background-color: rgb(255, 255, 0);
+    /* background-color: rgb(255, 255, 0); */
 }
 select.age{
     display: flex;
@@ -287,7 +288,7 @@ select.age{
     height: 5%;
     font-size: 2vw;
     right: 5%;
-    background-color: rgb(255, 255, 0);
+    /* background-color: rgb(255, 255, 0); */
 }
 label.gender{
     display: flex;
@@ -297,7 +298,7 @@ label.gender{
     height: 5%;
     font-size: 2vw;
     left: 5%;
-    background-color: rgb(255, 255, 0);
+    /* background-color: rgb(255, 255, 0); */
 }
 div.radiogender{
     display: flex;
@@ -307,7 +308,7 @@ div.radiogender{
     height: 5%;
     font-size: 2vw;
     right: 5%;
-    background-color: rgb(255, 255, 0);
+    /* background-color: rgb(255, 255, 0); */
 }
 input.male{
     display: flex;
@@ -317,7 +318,7 @@ input.male{
     height: 50%;
     /* font-size: 2vw; */
     left: 0%;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
 }
 label.male{
     display: flex;
@@ -371,4 +372,66 @@ label.other{
     font-size: 1vw;
     left: 73%;
     /* background-color: rgb(35, 35, 1); */
+}
+label.emailsignup{
+    display: flex;
+    position: absolute;
+    top: 51%;
+    font-size: 2vw;
+    left: 5%;
+    height: 5%;
+    width: 90%;
+    /* background-color: aqua; */
+}
+input.emailsignup{
+    display: flex;
+    position: absolute;
+    top: 57%;
+    border-radius: 10px;
+    height: 5%;
+    background-color: gray;
+    left: 4%;
+    width: 92%;
+    border: 1px solid black;
+}
+label.passwordsignup{
+    display: flex;
+    position: absolute;
+    top: 62%;
+    font-size: 2vw;
+    left: 5%;
+    height: 5%;
+    width: 90%;
+    /* background-color: aqua; */
+}
+input.passwordsignup{
+    display: flex;
+    position: absolute;
+    top: 68%;
+    border-radius: 10px;
+    height: 5%;
+    background-color: gray;
+    left: 4%;
+    width: 92%;
+    border: 1px solid black;
+}
+label.buttonsignup{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    width: 50%;
+    cursor: pointer;
+    font-size: 1.5vw;
+    color: wheat;
+    background-color: blue;
+}
+label.buttonsignup:hover{
+    background-color: brown;
+    box-shadow: 1px 3px 3px white;
+    color: white;   
 }
