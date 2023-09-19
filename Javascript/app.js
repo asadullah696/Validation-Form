@@ -18,22 +18,26 @@
         
         let useremail = document.getElementById("email").value ;
         let userpassword = document.getElementById("password").value ;
+        
+        let emailCheck = !email.includes(useremail);
+        console.log(emailCheck)
+        let passwordCheck = !password.includes(userpassword);
 
-        if(email.includes(useremail)){
+        if(email.includes(useremail) && password.includes(userpassword)){
             true
+            document.getElementById("login").href = "./main.html"
         }
         else{
-            false
-            alert("Email not match");
+            if(emailCheck == true){
+                document.getElementById("erroremail").style.display = "flex"
+            }
+
+            if(passwordCheck == true){
+                document.getElementById("errorpassword").style.display = "flex"
+            }
         }
 
-        if(password.includes(userpassword)){
-            true
-        }
-        else{
-            false
-            alert("Password not match");
-        }
+        
         
     }
 

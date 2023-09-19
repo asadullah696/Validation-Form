@@ -20,8 +20,8 @@
         <a href="#" class="list list5">Contact</a>
         </div>
         <div class="menuicon">
-            <img onclick="menuOn()" id="menuOn" src="./images/Navbar/icons8-menu-50.png" alt="" class="menuicon">
-            <img onclick="menuOff()" id="menuOff" src="./images/Navbar/icons8-cross-64.png" alt="" class="menucut">
+            <img onclick="menuOn()" id="menuOn" src="../images/Navbar/icons8-menu-50.png" alt="" class="menuicon">
+            <img onclick="menuOff()" id="menuOff" src="../images/Navbar/icons8-cross-64.png" alt="" class="menucut">
         </div>
     </nav> 
     <div class="container">
@@ -31,12 +31,23 @@
             <label for="new" onclick="newAccount()" class="newaccount1">Create New Account</label>
             <label for="Email" class="email1">Email</label>
             <input type="email" id="email" class="email1">
+            <label id="erroremail" for="erroremail">*email not found</label>
             <label for="password" class="password1">Password</label>
             <input type="password" id="password" class="password1">
-            <label for="button" class="button1" onclick="checkValidation()" ><a class="login" href="./main.html">Login</a></label>
+            <label id="errorpassword" for="errorpassword">*password not match</label>
+            <label for="button" class="button1" onclick="checkValidation()" ><a id="login" class="login" href="#login">Login</a></label>
         </form>
         <form class="formsignup" id="signupform">
-            
+            <label class="signup2" onclick="newAccount()" for="Sign up">Sign Up</label>
+            <label class="login2" for="Login">Login</label>
+            <label for="username" class="username">Username</label>
+            <input type="username" class="username">
+            <label for="fathername" class="fathername">Father Name</label>
+            <input type="text" class="fathername">
+            <label for="age" class="age">Age</label>
+            <select name="Age" id="age" class="age">
+                
+            </select>
         </form>
     </div>
 
