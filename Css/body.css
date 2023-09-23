@@ -3,7 +3,7 @@ div.container{
     position: absolute;
     top: 20%;
     left: 10%;
-    height: 100%;
+    min-height: 100%;
     width: 80%;
     background-color: aqua;
 }
@@ -68,8 +68,8 @@ label.email1{
     height: 9%;
     color: white;
     text-shadow: -2px 5px 5px black;
-    font-size: 1.5vw;
-    width: 88%;
+    font-size: 25px;
+    min-width: 88%;
     /* padding-left: 5%; */
     left: 6%;
     /* justify-content: center; */
@@ -435,3 +435,68 @@ label.buttonsignup:hover{
     box-shadow: 1px 3px 3px white;
     color: white;   
 }
+
+
+
+        /* Break Point Media Queries */
+
+@media only screen and (min-width:300px) and (max-width:449px){
+
+}
+@media only screen and (min-width:450px) and (max-width:600px){
+
+}
+@media only screen and (min-width:600px) and (max-width:700px){
+        div.container{
+            height: 100%;
+        }
+}
+@media only screen and (max-width:800px){
+    div.container{
+        top: 15%;
+        height: 110%;
+    }
+    form.formlogin{
+        top: 30%;
+        height: 70%;
+        left: 10%;
+        width: 80%;
+    }
+    label.button1{
+        top: 87%;
+    }
+    form.formsignup{
+        top: 20%;
+        left: 10%;
+        height: 80%;
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
