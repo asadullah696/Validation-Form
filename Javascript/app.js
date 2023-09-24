@@ -33,7 +33,7 @@
 
         if(email.includes(useremail) && password.includes(userpassword)){
             true
-            document.getElementById("login").href = "./main.html"
+            document.getElementById("login1").href = "../Html/main.html"
         }
         else{
             if(emailCheck == true){

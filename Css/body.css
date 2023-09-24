@@ -1,3 +1,12 @@
+
+input{
+    text-shadow: 2px 2px 2px rgb(6, 125, 0);
+    color: rgb(111, 255, 205);
+}
+::placeholder{
+    color: rgba(201, 201, 201, 0.716);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
 div.container{
     display: flex;
     position: absolute;
@@ -5,7 +14,7 @@ div.container{
     left: 10%;
     height: 100%;
     width: 80%;
-    background-color: aqua;
+    /* background-color: aqua */
 }
 form.formlogin{
     display: flex;
@@ -14,9 +23,23 @@ form.formlogin{
     left: 5%;
     height: 60%;
     width: 35%;
-    background-color: gray;
+    background-color: rgb(219, 55, 55);
     border-radius: 30px;
     box-shadow: 3px 3px 3px black;
+}
+label.headingtitle{
+    display: flex;
+    top: 0%;
+    left: 0%;
+    font-size: 35px;
+    width: 100%;
+    height: 20%;
+    color: white;
+    text-shadow: 3px 3px 5px lightgreen;
+    background-color: green;
+    border-radius: 30px 30px 0px 0px;
+    justify-content: center;
+    align-items: center;
 }
 label.signup1{
     display: flex;
@@ -81,11 +104,10 @@ input.email1{
     position: absolute;
     top: 51%;
     height: 9%;
-    font-size: 1vw;
+    font-size: 20px;
+    justify-content: center;
     width: 90%;
-    /* padding-left: 5%; */
     left: 5%;
-    /* justify-content: center; */
     border: 1px sloid black;
     border-radius: 10px;
     box-shadow: 1px 3px 3px rgb(0, 0, 0);
@@ -138,13 +160,14 @@ input.password1{
     top: 71%;
     box-shadow: 1px 3px 3px rgb(0, 0, 0);
     height: 9%;
-    font-size: 1vw;
+    font-size: 20px;
     width: 90%;
     /* padding-left: 5%; */
     left: 5%;
-    /* justify-content: center; */
+    justify-content: center;
     border: 1px sloid black;
     border-radius: 10px;
+    align-content: center;
     align-items: center;
     background-color: rgb(105, 105, 105);
 }
@@ -168,9 +191,6 @@ label.button1:hover{
     background-color: brown;
     box-shadow: 1px 3px 3px white;
     color: white;
-}
-::placeholder{
-    color: rgb(0, 0, 0);
 }
 a.login{
     display: flex;
@@ -246,6 +266,7 @@ input.username{
     position: absolute;
     top: 21%;
     border-radius: 10px;
+    font-size: 18px;
     height: 5%;
     background-color: gray;
     left: 4%;
@@ -265,6 +286,7 @@ label.fathername{
 input.fathername{
     display: flex;
     position: absolute;
+    font-size: 18px;
     top: 33%;
     border-radius: 10px;
     height: 5%;
@@ -341,7 +363,7 @@ input.female{
     top: 15%;
     height: 50%;
     font-size: 2vw;
-    left: 33%;
+    left: 28%;
     /* background-color: rgb(0, 0, 0); */
 }
 label.female{
@@ -352,7 +374,7 @@ label.female{
     align-items: center;
     height: 90%;
     font-size: 15px;
-    left: 41%;
+    left: 37%;
     /* background-color: rgb(35, 35, 1); */
 }
 input.other{
@@ -394,6 +416,7 @@ input.emailsignup{
     height: 5%;
     background-color: gray;
     left: 4%;
+    font-size: 18px;
     width: 92%;
     border: 1px solid black;
 }
@@ -412,7 +435,30 @@ input.passwordsignup{
     position: absolute;
     top: 68%;
     border-radius: 10px;
+    font-size: 18px;
     height: 5%;
+    background-color: gray;
+    left: 4%;
+    width: 92%;
+    border: 1px solid black;
+}
+label.comfirmpasswordsignup{
+    display: flex;
+    position: absolute;
+    top: 74%;
+    font-size: 22px;
+    left: 5%;
+    height: 5%;
+    width: 90%;
+    /* background-color: aqua; */
+}
+input.confirmpasswordsignup{
+    display: flex;
+    position: absolute;
+    top: 79%;
+    border-radius: 10px;
+    height: 5%;
+    font-size: 18px;
     background-color: gray;
     left: 4%;
     width: 92%;
@@ -421,7 +467,7 @@ input.passwordsignup{
 label.buttonsignup{
     display: flex;
     position: absolute;
-    top: 80%;
+    top: 91%;
     left: 25%;
     border-radius: 20px;
     justify-content: center;
@@ -444,17 +490,31 @@ label.buttonsignup:hover{
         /* Break Point Media Queries */
 
 @media only screen and (min-width:300px) and (max-width:449px){
+    ::placeholder{
+        font-size: x-small;
+    }
+
+    label.headingtitle{
+        font-size: 25px;
+    }
     div.container{
         width: 80%;
         left: 10%;
         top: 15%;
         height: 120%;
     }
+    input.pxmobile{
+        padding-bottom: 1%;
+        font-size: medium;
+    }
+    a#login1{
+        font-size: 20px;
+    }
     form.formlogin{
         top: 30%;
-        height: 45%;
-        left: 10%;
-        width: 80%;
+        height: 60%;
+        left: 0%;
+        width: 100%;
     }
     label.button1{
         top: 85%;
@@ -464,9 +524,9 @@ label.buttonsignup:hover{
     }
     form.formsignup{
         top: 20%;
-        left: 10%;
-        height: 65%;
-        width: 80%;
+        left: 0%;
+        height: 75%;
+        width: 100%;
     }
     label.male{
         left: 12%;
@@ -485,6 +545,16 @@ label.buttonsignup:hover{
     }
 }
 @media only screen and (min-width:450px) and (max-width:600px){
+    ::placeholder{
+        font-size: small;
+    }
+    a#login1{
+        font-size: 20px;
+    }
+    input.pxmobile{
+        padding-bottom: 1%;
+        font-size: medium;
+    }
     div.container{
         width: 80%;
         left: 10%;
@@ -501,7 +571,7 @@ label.buttonsignup:hover{
         top: 85%;
     }
     label.newaccount1{
-        font-size: 20px;
+        font-size: 17px;
     }
     form.formsignup{
         top: 20%;
@@ -520,6 +590,16 @@ label.buttonsignup:hover{
     }
 }
 @media only screen and (min-width:600px) and (max-width:700px){
+    ::placeholder{
+        font-size: medium;
+    }
+    input.pxmobile{
+        padding-bottom: 1%;
+        font-size: medium;
+    }
+    a#login1{
+        font-size: 20px;
+    }
     div.container{
         width: 80%;
         left: 10%;
@@ -546,6 +626,16 @@ label.buttonsignup:hover{
     }
 }
 @media only screen and (min-width:701px) and (max-width:800px) {
+    ::placeholder{
+        font-size: medium;
+    }
+    a#login1{
+        font-size: 20px;
+    }
+    input.pxmobile{
+        padding-bottom: 1%;
+        font-size: medium;
+    }
     div.container{
         width: 80%;
         left: 10%;
@@ -557,6 +647,9 @@ label.buttonsignup:hover{
         height: 45%;
         left: 10%;
         width: 80%;
+    }
+    label#erroremail{
+        left: 0%;
     }
     label.button1{
         top: 87%;
@@ -571,30 +664,105 @@ label.buttonsignup:hover{
         width: 80%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width:800px) and (max-width:1150px){
+    ::placeholder{
+        font-size: large;
+    }
+    input.pxmobile{
+        padding-bottom: 1%;
+        font-size: 20px;
+    }
+    form.formlogin{
+        left: 1%;
+        width: 49%;
+    }
+    a#login1{
+        font-size: 30px;
+    }
+    form.formsignup{
+        left: 1%;
+        width: 49%;
+    }
+    input.male{
+        left: 0%;
+    }
+    label.male{
+        left: 9%;
+        font-size: 12px;
+    }
+    input.female{
+        left: 25%;
+    }
+    label.female{
+        left: 35%;
+        font-size: 12px;
+    }
+    input.other{
+        left: 62%;
+    }
+    label.other{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width:1900px){
+    ::placeholder{
+        font-size: 29px;
+    }
+    input.px1900{
+        font-size: 50px;
+    }
+    label.px1900{
+        font-size: 40px;
+    }
+    form.formlogin{
+        height: 70%;
+    }
+    label.pxmain1900{
+        font-size: 55px;
+    }
+    form.formlogin{
+        left: 1%;
+        width: 49%;
+    }
+    label.button1{
+        top: 85%;
+    }
+    form.formsignup{
+        left: 1%;
+        width: 49%;
+    }
+    input.male{
+        left: 0%;
+    }
+    label.male{
+        left: 9%;
+        font-size: 25px;
+    }
+    input.female{
+        left: 25%;
+    }
+    label.female{
+        left: 35%;
+        font-size: 25px;
+    }
+    input.other{
+        left: 62%;
+    }
+    label.other{
+        font-size: 25px;
+    }
+    label#erroremail{
+        left: 0%;
+        font-size: 28px;
+    }
+    label#errorpassword{
+        left: 5%;
+        font-size: 28px;
+    }
+    label.newaccount1{
+        font-size: 35px;
+    }
+}
 
 
 
