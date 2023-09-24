@@ -1,3 +1,11 @@
+@font-face {
+    font-family: badshahg;
+    src: url(../Fontface/PTSerif-Italic.ttf);
+}
+@font-face {
+    font-family: badshah;
+    src: url(../Fontface/CroissantOne-Regular.ttf);
+}
 
 input{
     text-shadow: 2px 2px 2px rgb(6, 125, 0);
@@ -16,6 +24,41 @@ div.container{
     width: 80%;
     /* background-color: aqua */
 }
+div.mainwelcomenote{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    /* background-color: brown; */
+}
+div.headingnote{
+    display: flex;
+    position: absolute;
+    font-size: 45px;
+    left: 5%;
+    color: green;
+    font-family: badshah;
+    text-shadow: 2px 3px 3px lightcoral;
+    top: 5%;
+    height: 17%;
+    min-width: 20%;
+    /* background-color: blue; */
+}
+div.subnote{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    font-family: badshahg;
+    font-size: 25px;
+    width: 90%;
+    height: 70%;
+    /* background-color: blueviolet; */
+}
 form.formlogin{
     display: flex;
     position: absolute;
@@ -33,7 +76,7 @@ label.headingtitle{
     left: 0%;
     font-size: 35px;
     width: 100%;
-    height: 20%;
+    height: 15%;
     color: white;
     text-shadow: 3px 3px 5px lightgreen;
     background-color: green;
@@ -484,12 +527,84 @@ label.buttonsignup:hover{
     box-shadow: 1px 3px 3px white;
     color: white;   
 }
+div#signupnote{
+    display: none;
+}
 
 
 
         /* Break Point Media Queries */
 
-@media only screen and (min-width:300px) and (max-width:449px){
+
+@media only screen and (max-width:299px){
+    ::placeholder{
+        font-size: x-small;
+    }
+    label.headingtitle{
+        font-size: 25px;
+    }
+    div.container{
+        width: 80%;
+        left: 10%;
+        top: 15%;
+        height: 120%;
+    }
+    input.pxmobile{
+        padding-bottom: 1%;
+        font-size: medium;
+    }
+    a#login1{
+        font-size: 20px;
+    }
+    form.formlogin{
+        top: 30%;
+        height: 60%;
+        left: 0%;
+        width: 100%;
+    }
+    label.button1{
+        top: 85%;
+    }
+    label.newaccount1{
+        font-size: 15px;
+    }
+    form.formsignup{
+        top: 35%;
+        left: 0%;
+        height: 75%;
+        width: 100%;
+    }
+    label.male{
+        left: 12%;
+        font-size: 12px;
+    }
+    label.female{
+        left: 45%;
+        font-size: 12px;
+    }
+    input.other{
+        left: 70%;
+    }
+    label.other{
+        left: 83%;
+        font-size: 12px;
+    }
+    div.mainwelcomenote{
+        top: 0%;
+        left: 5%;
+        width: 90%;
+        height: 29%;
+    }
+    div.headingnote{
+        width: 90%;
+        font-size: 25px;
+    }
+    div.subnote{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:450px){
     ::placeholder{
         font-size: x-small;
     }
@@ -523,7 +638,7 @@ label.buttonsignup:hover{
         font-size: 15px;
     }
     form.formsignup{
-        top: 20%;
+        top: 35%;
         left: 0%;
         height: 75%;
         width: 100%;
@@ -542,6 +657,19 @@ label.buttonsignup:hover{
     label.other{
         left: 83%;
         font-size: 12px;
+    }
+    div.mainwelcomenote{
+        top: 0%;
+        left: 5%;
+        width: 90%;
+        height: 29%;
+    }
+    div.headingnote{
+        width: 90%;
+        font-size: 27px;
+    }
+    div.subnote{
+        font-size: 17px;
     }
 }
 @media only screen and (min-width:450px) and (max-width:600px){
@@ -574,7 +702,7 @@ label.buttonsignup:hover{
         font-size: 17px;
     }
     form.formsignup{
-        top: 20%;
+        top: 35%;
         left: 10%;
         height: 65%;
         width: 80%;
@@ -587,6 +715,18 @@ label.buttonsignup:hover{
     }
     label.other{
         font-size: 12px;
+    }
+    div.mainwelcomenote{
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 24%;
+    }
+    div.headingnote{
+        font-size: 30px;
+    }
+    div.subnote{
+        font-size: 20px;
     }
 }
 @media only screen and (min-width:600px) and (max-width:700px){
@@ -619,10 +759,19 @@ label.buttonsignup:hover{
         font-size: 20px;
     }
     form.formsignup{
-        top: 20%;
+        top: 35%;
         left: 10%;
         height: 65%;
         width: 80%;
+    }
+    div.mainwelcomenote{
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 24%;
+    }
+    div.subnote{
+        font-size: 24px;
     }
 }
 @media only screen and (min-width:701px) and (max-width:800px) {
@@ -658,10 +807,16 @@ label.buttonsignup:hover{
         font-size: 20px;
     }
     form.formsignup{
-        top: 20%;
+        top: 35%;
         left: 10%;
         height: 65%;
         width: 80%;
+    }
+    div.mainwelcomenote{
+        top: 3%;
+        left: 10%;
+        width: 80%;
+        height: 25%;
     }
 }
 @media only screen and (min-width:800px) and (max-width:1150px){
@@ -702,6 +857,20 @@ label.buttonsignup:hover{
     }
     label.other{
         font-size: 12px;
+    }
+    div.mainwelcomenote{
+        top: 8%;
+        width: 40%;
+        height: 60%;
+    }
+    div.headingnote{
+        top: 10%;
+        height: 10%;
+        width: 90%;
+        font-size: 33px;
+    }
+    div.subote{
+        top: 10%;
     }
 }
 @media only screen and (min-width:1900px){

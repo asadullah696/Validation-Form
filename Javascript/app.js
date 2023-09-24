@@ -50,12 +50,16 @@
     }
 
     function newAccount(){
-        document.getElementById("loginform").style.display = "none"
-        document.getElementById("signupform").style.display = "flex"
+        document.getElementById("loginform").style.display = "none";
+        document.getElementById("signupform").style.display = "flex";
+        document.getElementById("loginnote").style.display = "none";
+        document.getElementById("signupnote").style.display = "flex";
     }
     function login(){
-        document.getElementById("loginform").style.display = "flex"
-        document.getElementById("signupform").style.display = "none"
+        document.getElementById("loginform").style.display = "flex";
+        document.getElementById("signupform").style.display = "none";
+        document.getElementById("loginnote").style.display = "flex";
+        document.getElementById("signupnote").style.display = "none";
     }
 
     // function signupUser(){
