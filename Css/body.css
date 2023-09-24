@@ -3,7 +3,7 @@ div.container{
     position: absolute;
     top: 20%;
     left: 10%;
-    min-height: 100%;
+    height: 100%;
     width: 80%;
     background-color: aqua;
 }
@@ -124,7 +124,7 @@ label.password1{
     text-shadow: -2px 5px 5px black;
     top: 61%;
     height: 9%;
-    font-size: 1.5vw;
+    font-size: 25px;
     width: 88%;
     /* padding-left: 5%; */
     left: 6%;
@@ -169,7 +169,10 @@ label.button1:hover{
     box-shadow: 1px 3px 3px white;
     color: white;
 }
-a.login1{
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+a.login{
     display: flex;
     position: absolute;
     top: 0%;
@@ -177,8 +180,8 @@ a.login1{
     justify-content: center;
     align-items: center;
     color: white;
-    /* height: 100%; */
-    /* width: 100%; */
+    /* height: 100%;
+    width: 100%; */
     text-shadow: 2px 2px 3px black;
 }
 a.login:hover{
@@ -231,10 +234,10 @@ label.login2{
 label.username{
     display: flex;
     position: absolute;
-    top: 15%;
-    font-size: 2vw;
+    top: 17%;
+    font-size: 20px;
     left: 5%;
-    height: 5%;
+    height: 3%;
     width: 90%;
     /* background-color: aqua; */
 }
@@ -252,10 +255,10 @@ input.username{
 label.fathername{
     display: flex;
     position: absolute;
-    top: 27%;
-    font-size: 2vw;
+    top: 29%;
+    font-size: 20px;
     left: 5%;
-    height: 5%;
+    height: 3%;
     width: 90%;
     /* background-color: aqua; */
 }
@@ -274,9 +277,9 @@ label.age{
     display: flex;
     position: absolute;
     min-width: 30%;
-    top: 39%;
-    height: 5%;
-    font-size: 2vw;
+    top: 40%;
+    height: 3%;
+    font-size: 20px;
     left: 5%;
     /* background-color: rgb(255, 255, 0); */
 }
@@ -294,9 +297,9 @@ label.gender{
     display: flex;
     position: absolute;
     min-width: 30%;
-    top: 45%;
+    top: 46%;
     height: 5%;
-    font-size: 2vw;
+    font-size: 20px;
     left: 5%;
     /* background-color: rgb(255, 255, 0); */
 }
@@ -323,11 +326,11 @@ input.male{
 label.male{
     display: flex;
     position: absolute;
-    width: 23%;
+    min-width: 23%;
     top: 5%;
     align-items: center;
     height: 90%;
-    font-size: 1vw;
+    font-size: 15px;
     left: 9%;
     /* background-color: rgb(35, 35, 1); */
 }
@@ -344,11 +347,11 @@ input.female{
 label.female{
     display: flex;
     position: absolute;
-    width: 23%;
+    min-width: 23%;
     top: 5%;
     align-items: center;
     height: 90%;
-    font-size: 1vw;
+    font-size: 15px;
     left: 41%;
     /* background-color: rgb(35, 35, 1); */
 }
@@ -365,19 +368,19 @@ input.other{
 label.other{
     display: flex;
     position: absolute;
-    width: 23%;
+    min-width: 23%;
     top: 5%;
     align-items: center;
     height: 90%;
-    font-size: 1vw;
+    font-size: 15px;
     left: 73%;
     /* background-color: rgb(35, 35, 1); */
 }
 label.emailsignup{
     display: flex;
     position: absolute;
-    top: 51%;
-    font-size: 2vw;
+    top: 52%;
+    font-size: 22px;
     left: 5%;
     height: 5%;
     width: 90%;
@@ -397,8 +400,8 @@ input.emailsignup{
 label.passwordsignup{
     display: flex;
     position: absolute;
-    top: 62%;
-    font-size: 2vw;
+    top: 63%;
+    font-size: 22px;
     left: 5%;
     height: 5%;
     width: 90%;
@@ -426,7 +429,7 @@ label.buttonsignup{
     height: 8%;
     width: 50%;
     cursor: pointer;
-    font-size: 1.5vw;
+    font-size: large;
     color: wheat;
     background-color: blue;
 }
@@ -441,34 +444,130 @@ label.buttonsignup:hover{
         /* Break Point Media Queries */
 
 @media only screen and (min-width:300px) and (max-width:449px){
-
-}
-@media only screen and (min-width:450px) and (max-width:600px){
-
-}
-@media only screen and (min-width:600px) and (max-width:700px){
-        div.container{
-            height: 100%;
-        }
-}
-@media only screen and (max-width:800px){
     div.container{
+        width: 80%;
+        left: 10%;
         top: 15%;
-        height: 110%;
+        height: 120%;
     }
     form.formlogin{
         top: 30%;
-        height: 70%;
+        height: 45%;
+        left: 10%;
+        width: 80%;
+    }
+    label.button1{
+        top: 85%;
+    }
+    label.newaccount1{
+        font-size: 15px;
+    }
+    form.formsignup{
+        top: 20%;
+        left: 10%;
+        height: 65%;
+        width: 80%;
+    }
+    label.male{
+        left: 12%;
+        font-size: 12px;
+    }
+    label.female{
+        left: 45%;
+        font-size: 12px;
+    }
+    input.other{
+        left: 70%;
+    }
+    label.other{
+        left: 83%;
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:600px){
+    div.container{
+        width: 80%;
+        left: 10%;
+        top: 15%;
+        height: 130%;
+    }
+    form.formlogin{
+        top: 30%;
+        height: 45%;
+        left: 10%;
+        width: 80%;
+    }
+    label.button1{
+        top: 85%;
+    }
+    label.newaccount1{
+        font-size: 20px;
+    }
+    form.formsignup{
+        top: 20%;
+        left: 10%;
+        height: 65%;
+        width: 80%;
+    }
+    label.male{
+        font-size: 12px;
+    }
+    label.female{
+        font-size: 12px;
+    }
+    label.other{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:700px){
+    div.container{
+        width: 80%;
+        left: 10%;
+        top: 15%;
+        height: 140%;
+    }
+    form.formlogin{
+        top: 30%;
+        height: 45%;
+        left: 10%;
+        width: 80%;
+    }
+    label.button1{
+        top: 85%;
+    }
+    label.newaccount1{
+        font-size: 20px;
+    }
+    form.formsignup{
+        top: 20%;
+        left: 10%;
+        height: 65%;
+        width: 80%;
+    }
+}
+@media only screen and (min-width:701px) and (max-width:800px) {
+    div.container{
+        width: 80%;
+        left: 10%;
+        top: 15%;
+        height: 150%;
+    }
+    form.formlogin{
+        top: 30%;
+        height: 45%;
         left: 10%;
         width: 80%;
     }
     label.button1{
         top: 87%;
     }
+    label.newaccount1{
+        font-size: 20px;
+    }
     form.formsignup{
         top: 20%;
         left: 10%;
-        height: 80%;
+        height: 65%;
         width: 80%;
     }
 }
