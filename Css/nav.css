@@ -225,3 +225,15 @@ img.cutmenu{
         display: flex !important;
     }
 }
+
+@media only screen and (max-height:600px){
+    nav.navbar{
+        height: 15%;
+    }
+}
+
+
+
+
+
+
